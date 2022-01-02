@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="practice-programs" Database="" Version="10000">
+  <Project Name="HELLO-WORLD" Path="HELLO-WORLD/HELLO-WORLD.project" Active="No"/>
+  <Project Name="TRIAL" Path="TRIAL/TRIAL.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="HELLO-WORLD" ConfigName="Debug"/>
+      <Project Name="TRIAL" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="HELLO-WORLD" ConfigName="Release"/>
+      <Project Name="TRIAL" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
