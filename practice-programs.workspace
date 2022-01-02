@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="practice-programs" Database="" Version="10000">
-  <Project Name="HELLO-WORLD" Path="HELLO-WORLD/HELLO-WORLD.project" Active="No"/>
-  <Project Name="TRIAL" Path="TRIAL/TRIAL.project" Active="Yes"/>
+  <Project Name="HELLO-WORLD" Path="HELLO-WORLD/HELLO-WORLD.project" Active="Yes"/>
+  <Project Name="TRIAL" Path="TRIAL/TRIAL.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
