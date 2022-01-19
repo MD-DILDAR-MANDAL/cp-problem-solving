@@ -1,2 +1,4 @@
-adding competitive programs
+/*adding practise programs
+/*learning data structure and algorithm
+/*small small codes
 <-------------->
