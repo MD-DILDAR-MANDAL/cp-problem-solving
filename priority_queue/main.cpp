@@ -7,6 +7,7 @@ int main(){
     q.push(8);
     q.push(9);
     q.push(17);
+    cout << q[1];
     cout <<q.top();
     q.pop();
     cout<<'\n'<<q.top();

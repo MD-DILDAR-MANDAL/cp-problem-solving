@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="practice-programs" Database="" Version="10000">
-  <Project Name="HELLO-WORLD" Path="HELLO-WORLD/HELLO-WORLD.project" Active="No"/>
-  <Project Name="TRIAL-WORK" Path="TRIAL/TRIAL.project" Active="No"/>
+  <Project Name="good_logic_1" Path="TRIAL/TRIAL.project" Active="No"/>
   <Project Name="pointer" Path="pointer/pointer.project" Active="No"/>
   <Project Name="game_project" Path="game_project/game_project.project" Active="No"/>
   <Project Name="min-heaps_using_arrays" Path="heaps_using_arrays/heaps_using_arrays.project" Active="No"/>
   <Project Name="priority_queue" Path="priority_queue/priority_queue.project" Active="No"/>
   <Project Name="q1-priority_queue" Path="q1-priority_queue/q1-priority_queue.project" Active="No"/>
-  <Project Name="q2-priority_queue" Path="q2-priority_queue/q2-priority_queue.project" Active="Yes"/>
+  <Project Name="q2-priority_queue" Path="q2-priority_queue/q2-priority_queue.project" Active="No"/>
+  <Project Name="p_array1" Path="p_array1/p_array1.project" Active="No"/>
+  <Project Name="Recursion" Path="Recursion/Recursion.project" Active="Yes"/>
+  <Project Name="Recursion_fibo" Path="Recursion_fibo/Recursion_fibo.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
-      <Project Name="HELLO-WORLD" ConfigName="Debug"/>
-      <Project Name="TRIAL-WORK" ConfigName="Debug"/>
+      <Project Name="good_logic_1" ConfigName="Debug"/>
       <Project Name="pointer" ConfigName="Debug"/>
       <Project Name="game_project" ConfigName="Debug"/>
       <Project Name="min-heaps_using_arrays" ConfigName="Debug"/>
       <Project Name="priority_queue" ConfigName="Debug"/>
       <Project Name="q1-priority_queue" ConfigName="Debug"/>
       <Project Name="q2-priority_queue" ConfigName="Debug"/>
+      <Project Name="p_array1" ConfigName="Debug"/>
+      <Project Name="Recursion" ConfigName="Debug"/>
+      <Project Name="Recursion_fibo" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="HELLO-WORLD" ConfigName="Release"/>
-      <Project Name="TRIAL-WORK" ConfigName="Release"/>
+      <Project Name="good_logic_1" ConfigName="Release"/>
       <Project Name="pointer" ConfigName="Release"/>
       <Project Name="game_project" ConfigName="Release"/>
       <Project Name="min-heaps_using_arrays" ConfigName="Release"/>
       <Project Name="priority_queue" ConfigName="Release"/>
       <Project Name="q1-priority_queue" ConfigName="Release"/>
       <Project Name="q2-priority_queue" ConfigName="Release"/>
+      <Project Name="p_array1" ConfigName="Release"/>
+      <Project Name="Recursion" ConfigName="Release"/>
+      <Project Name="Recursion_fibo" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

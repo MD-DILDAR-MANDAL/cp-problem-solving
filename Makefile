@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ q2-priority_queue - Debug ]----------"
-	@cd "q2-priority_queue" && "$(MAKE)" -f  "q2-priority_queue.mk"
+	@echo "----------Building project:[ Recursion - Debug ]----------"
+	@cd "Recursion" && "$(MAKE)" -f  "Recursion.mk"
 clean:
-	@echo "----------Cleaning project:[ q2-priority_queue - Debug ]----------"
-	@cd "q2-priority_queue" && "$(MAKE)" -f  "q2-priority_queue.mk" clean
+	@echo "----------Cleaning project:[ Recursion - Debug ]----------"
+	@cd "Recursion" && "$(MAKE)" -f  "Recursion.mk" clean

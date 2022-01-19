@@ -1,1 +1,1 @@
-../build-Debug/trial/main.cpp.o: main.cpp
+../build-Debug/TRIAL/main.cpp.o: main.cpp
