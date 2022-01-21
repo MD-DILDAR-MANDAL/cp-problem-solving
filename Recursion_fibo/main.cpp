@@ -2,12 +2,10 @@
 using namespace std;
     
 int fibo(int p){
-    if(p == 1 || p == 2) {cout << p-1 <<" " ;return p-1;} //base
-    int ans = fibo(p - 1) + fibo(p - 2);
-    cout << ans << " ";
-    return ans;
+    if(p == 1 || p == 0)return p;
+    else return fibo(p - 1) + fibo(p - 2);
 }
 int main(){
-    fibo(4);
+    for(int i = 1;i <= 5;i++) cout << fibo(i) << " ";
     return 0;
 }
