@@ -9,10 +9,12 @@
   <Project Name="q2-priority_queue" Path="q2-priority_queue/q2-priority_queue.project" Active="No"/>
   <Project Name="p_array1" Path="p_array1/p_array1.project" Active="No"/>
   <Project Name="Recursion" Path="Recursion/Recursion.project" Active="No"/>
-  <Project Name="Recursion_fibo" Path="Recursion_fibo/Recursion_fibo.project" Active="Yes"/>
+  <Project Name="Recursion_fibo" Path="Recursion_fibo/Recursion_fibo.project" Active="No"/>
   <Project Name="Recursion_steps" Path="Recursion_steps/Recursion_steps.project" Active="No"/>
   <Project Name="Recursion_min_cost_steps" Path="Recursion_min_cost_steps/Recursion_min_cost_steps.project" Active="No"/>
   <Project Name="good_logic_2" Path="good_logic_2/good_logic_2.project" Active="No"/>
+  <Project Name="MANDALVERSE" Path="MANDALVERSE/MANDALVERSE.project" Active="No"/>
+  <Project Name="recursion_no_of_squares" Path="recursion_no_of_squares/recursion_no_of_squares.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -29,6 +31,8 @@
       <Project Name="Recursion_steps" ConfigName="Debug"/>
       <Project Name="Recursion_min_cost_steps" ConfigName="Debug"/>
       <Project Name="good_logic_2" ConfigName="Debug"/>
+      <Project Name="MANDALVERSE" ConfigName="Debug"/>
+      <Project Name="recursion_no_of_squares" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -45,6 +49,8 @@
       <Project Name="Recursion_steps" ConfigName="Release"/>
       <Project Name="Recursion_min_cost_steps" ConfigName="Release"/>
       <Project Name="good_logic_2" ConfigName="Release"/>
+      <Project Name="MANDALVERSE" ConfigName="Release"/>
+      <Project Name="recursion_no_of_squares" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

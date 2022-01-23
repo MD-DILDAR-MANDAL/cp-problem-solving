@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ good_logic_2 - Debug ]----------"
-	@cd "good_logic_2" && "$(MAKE)" -f  "good_logic_2.mk"
+	@echo "----------Building project:[ recursion_no_of_squares - Debug ]----------"
+	@cd "recursion_no_of_squares" && "$(MAKE)" -f  "recursion_no_of_squares.mk"
 clean:
-	@echo "----------Cleaning project:[ good_logic_2 - Debug ]----------"
-	@cd "good_logic_2" && "$(MAKE)" -f  "good_logic_2.mk" clean
+	@echo "----------Cleaning project:[ recursion_no_of_squares - Debug ]----------"
+	@cd "recursion_no_of_squares" && "$(MAKE)" -f  "recursion_no_of_squares.mk" clean
