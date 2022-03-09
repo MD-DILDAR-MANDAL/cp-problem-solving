@@ -14,7 +14,15 @@
   <Project Name="Recursion_min_cost_steps" Path="Recursion_min_cost_steps/Recursion_min_cost_steps.project" Active="No"/>
   <Project Name="good_logic_2" Path="good_logic_2/good_logic_2.project" Active="No"/>
   <Project Name="MANDALVERSE" Path="MANDALVERSE/MANDALVERSE.project" Active="No"/>
-  <Project Name="recursion_no_of_squares" Path="recursion_no_of_squares/recursion_no_of_squares.project" Active="Yes"/>
+  <Project Name="recursion_no_of_squares" Path="recursion_no_of_squares/recursion_no_of_squares.project" Active="No"/>
+  <Project Name="recursion_2_player_game" Path="recursion_2_player_game/recursion_2_player_game.project" Active="No"/>
+  <Project Name="good_logic_3" Path="good_logic_3/good_logic_3.project" Active="No"/>
+  <Project Name="recursion_subset_create" Path="recursion_subset_create/recursion_subset_create.project" Active="No"/>
+  <Project Name="recursion_subset" Path="recursion_subset/recursion_subset.project" Active="No"/>
+  <Project Name="recursion_balanced_brackets" Path="recursion_balanced_brackets/recursion_balanced_brackets.project" Active="No"/>
+  <Project Name="backtracking_n_queen" Path="backtracking_n_queen/backtracking_n_queen.project" Active="No"/>
+  <Project Name="palindromic_partition" Path="palindromic_partition/palindromic_partition.project" Active="No"/>
+  <Project Name="codechef_solve" Path="codechef_solve/codechef_solve.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -33,6 +41,15 @@
       <Project Name="good_logic_2" ConfigName="Debug"/>
       <Project Name="MANDALVERSE" ConfigName="Debug"/>
       <Project Name="recursion_no_of_squares" ConfigName="Debug"/>
+      <Project Name="recursion_2_player_game" ConfigName="Debug"/>
+      <Project Name="good_logic_3" ConfigName="Debug"/>
+      <Project Name="recursion_subset_create" ConfigName="Debug"/>
+      <Project Name="recursion_subset" ConfigName="Debug"/>
+      <Project Name="recursion_balanced_brackets" ConfigName="Debug"/>
+      <Project Name="backtracking_n_queen" ConfigName="Debug"/>
+      <Project Name="CODECHEF/QUESTION" ConfigName="Debug"/>
+      <Project Name="palindromic_partition" ConfigName="Debug"/>
+      <Project Name="codechef_solve" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -51,6 +68,15 @@
       <Project Name="good_logic_2" ConfigName="Release"/>
       <Project Name="MANDALVERSE" ConfigName="Release"/>
       <Project Name="recursion_no_of_squares" ConfigName="Release"/>
+      <Project Name="recursion_2_player_game" ConfigName="Release"/>
+      <Project Name="good_logic_3" ConfigName="Release"/>
+      <Project Name="recursion_subset_create" ConfigName="Release"/>
+      <Project Name="recursion_subset" ConfigName="Release"/>
+      <Project Name="recursion_balanced_brackets" ConfigName="Release"/>
+      <Project Name="backtracking_n_queen" ConfigName="Release"/>
+      <Project Name="CODECHEF/QUESTION" ConfigName="Release"/>
+      <Project Name="palindromic_partition" ConfigName="Release"/>
+      <Project Name="codechef_solve" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

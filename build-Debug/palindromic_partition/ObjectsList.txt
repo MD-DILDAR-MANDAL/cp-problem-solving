@@ -1,0 +1,1 @@
+../build-Debug/palindromic_partition/main.cpp.o   

@@ -15,6 +15,6 @@ int facto(int m){
 }
     
 int main(){
-    cout << sum(10) << "\n" << facto(5);
+    cout << sum(10) << "\n" << facto(60);
 	return 0;
 }
