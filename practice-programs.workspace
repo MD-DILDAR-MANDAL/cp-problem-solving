@@ -22,7 +22,17 @@
   <Project Name="recursion_balanced_brackets" Path="recursion_balanced_brackets/recursion_balanced_brackets.project" Active="No"/>
   <Project Name="backtracking_n_queen" Path="backtracking_n_queen/backtracking_n_queen.project" Active="No"/>
   <Project Name="palindromic_partition" Path="palindromic_partition/palindromic_partition.project" Active="No"/>
-  <Project Name="codechef_solve" Path="codechef_solve/codechef_solve.project" Active="Yes"/>
+  <Project Name="codechef_solve" Path="codechef_solve/codechef_solve.project" Active="No"/>
+  <Project Name="kadanes_algorithm" Path="kadanes_algorithm/kadanes_algorithm.project" Active="No"/>
+  <Project Name="lexico" Path="lexico/lexico.project" Active="No"/>
+  <Project Name="wordle" Path="wordle/wordle.project" Active="No"/>
+  <Project Name="akash_leave" Path="akash_leave/akash_leave.project" Active="No"/>
+  <Project Name="contest1" Path="contest1/contest1.project" Active="No"/>
+  <Project Name="missingNumbers" Path="missingNumbers/missingNumbers.project" Active="No"/>
+  <Project Name="rotateMatrix" Path="rotateMatrix/rotateMatrix.project" Active="No"/>
+  <Project Name="rotate_matrix" Path="rotate_matrix/rotate_matrix.project" Active="No"/>
+  <Project Name="merge_overlapping" Path="merge_overlapping/merge_overlapping.project" Active="No"/>
+  <Project Name="buySellStocks" Path="buySellStocks/buySellStocks.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -50,6 +60,16 @@
       <Project Name="CODECHEF/QUESTION" ConfigName="Debug"/>
       <Project Name="palindromic_partition" ConfigName="Debug"/>
       <Project Name="codechef_solve" ConfigName="Debug"/>
+      <Project Name="kadanes_algorithm" ConfigName="Debug"/>
+      <Project Name="lexico" ConfigName="Debug"/>
+      <Project Name="wordle" ConfigName="Debug"/>
+      <Project Name="akash_leave" ConfigName="Debug"/>
+      <Project Name="contest1" ConfigName="Debug"/>
+      <Project Name="missingNumbers" ConfigName="Debug"/>
+      <Project Name="rotateMatrix" ConfigName="Debug"/>
+      <Project Name="rotate_matrix" ConfigName="Debug"/>
+      <Project Name="merge_overlapping" ConfigName="Debug"/>
+      <Project Name="buySellStocks" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -77,6 +97,16 @@
       <Project Name="CODECHEF/QUESTION" ConfigName="Release"/>
       <Project Name="palindromic_partition" ConfigName="Release"/>
       <Project Name="codechef_solve" ConfigName="Release"/>
+      <Project Name="kadanes_algorithm" ConfigName="Release"/>
+      <Project Name="lexico" ConfigName="Release"/>
+      <Project Name="wordle" ConfigName="Release"/>
+      <Project Name="akash_leave" ConfigName="Release"/>
+      <Project Name="contest1" ConfigName="Release"/>
+      <Project Name="missingNumbers" ConfigName="Release"/>
+      <Project Name="rotateMatrix" ConfigName="Release"/>
+      <Project Name="rotate_matrix" ConfigName="Release"/>
+      <Project Name="merge_overlapping" ConfigName="Release"/>
+      <Project Name="buySellStocks" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

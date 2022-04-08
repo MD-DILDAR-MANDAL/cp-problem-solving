@@ -1,0 +1,1 @@
+../build-Debug/kadane'sAlgoritm/main.cpp.o   

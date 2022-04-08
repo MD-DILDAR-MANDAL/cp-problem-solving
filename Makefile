@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ codechef_solve - Debug ]----------"
-	@cd "codechef_solve" && "$(MAKE)" -f  "codechef_solve.mk"
+	@echo "----------Building project:[ buySellStocks - Debug ]----------"
+	@cd "buySellStocks" && "$(MAKE)" -f  "buySellStocks.mk"
 clean:
-	@echo "----------Cleaning project:[ codechef_solve - Debug ]----------"
-	@cd "codechef_solve" && "$(MAKE)" -f  "codechef_solve.mk" clean
+	@echo "----------Cleaning project:[ buySellStocks - Debug ]----------"
+	@cd "buySellStocks" && "$(MAKE)" -f  "buySellStocks.mk" clean

@@ -1,0 +1,1 @@
+../build-Debug/lexico/main.cpp.o   
