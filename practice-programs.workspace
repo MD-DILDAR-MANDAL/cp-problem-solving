@@ -22,7 +22,7 @@
   <Project Name="recursion_balanced_brackets" Path="recursion_balanced_brackets/recursion_balanced_brackets.project" Active="No"/>
   <Project Name="backtracking_n_queen" Path="backtracking_n_queen/backtracking_n_queen.project" Active="No"/>
   <Project Name="palindromic_partition" Path="palindromic_partition/palindromic_partition.project" Active="No"/>
-  <Project Name="codechef_solve" Path="codechef_solve/codechef_solve.project" Active="No"/>
+  <Project Name="codechef_solve" Path="codechef_solve/codechef_solve.project" Active="Yes"/>
   <Project Name="kadanes_algorithm" Path="kadanes_algorithm/kadanes_algorithm.project" Active="No"/>
   <Project Name="lexico" Path="lexico/lexico.project" Active="No"/>
   <Project Name="wordle" Path="wordle/wordle.project" Active="No"/>
@@ -32,7 +32,9 @@
   <Project Name="rotateMatrix" Path="rotateMatrix/rotateMatrix.project" Active="No"/>
   <Project Name="rotate_matrix" Path="rotate_matrix/rotate_matrix.project" Active="No"/>
   <Project Name="merge_overlapping" Path="merge_overlapping/merge_overlapping.project" Active="No"/>
-  <Project Name="buySellStocks" Path="buySellStocks/buySellStocks.project" Active="Yes"/>
+  <Project Name="buySellStocks" Path="buySellStocks/buySellStocks.project" Active="No"/>
+  <Project Name="dynamicPro" Path="dynamicPro/dynamicPro.project" Active="No"/>
+  <Project Name="dynamicPro2" Path="dynamicPro2/dynamicPro2.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -70,6 +72,8 @@
       <Project Name="rotate_matrix" ConfigName="Debug"/>
       <Project Name="merge_overlapping" ConfigName="Debug"/>
       <Project Name="buySellStocks" ConfigName="Debug"/>
+      <Project Name="dynamicPro" ConfigName="Debug"/>
+      <Project Name="dynamicPro2" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -107,6 +111,8 @@
       <Project Name="rotate_matrix" ConfigName="Release"/>
       <Project Name="merge_overlapping" ConfigName="Release"/>
       <Project Name="buySellStocks" ConfigName="Release"/>
+      <Project Name="dynamicPro" ConfigName="Release"/>
+      <Project Name="dynamicPro2" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

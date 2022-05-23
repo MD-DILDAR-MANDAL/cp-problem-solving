@@ -4,9 +4,9 @@
   <wxString Value="C:\Users\deepjal\Documents\GitHub\practice-programs\practice-programs.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\deepjal\Documents\GitHub\practice-programs\buySellStocks\main.cpp" Name="FileName"/>
+      <wxString Value="C:\Users\deepjal\Documents\GitHub\practice-programs\codechef_solve\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="3" Name="CurrentLine"/>
+      <int Value="16" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
