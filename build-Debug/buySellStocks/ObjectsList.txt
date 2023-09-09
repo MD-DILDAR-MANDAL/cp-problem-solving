@@ -1,1 +1,0 @@
-../build-Debug/buySellStocks/main.cpp.o   
