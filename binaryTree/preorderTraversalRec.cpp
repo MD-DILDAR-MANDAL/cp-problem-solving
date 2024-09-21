@@ -13,17 +13,16 @@
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root){
-        vector<int>vp;
-        if(root==NULL){
-            return vp;
-        }
-        vp.push_back(root->val);
-        for(auto it : preorderTraversal(root->left)){
-            vp.push_back(it);
-        }
-        for(auto it : preorderTraversal(root->right)){
-            vp.push_back(it);
-        }
+        vector<int> vp;
+        preorder(root,vp);
         return vp;
+    }
+private:
+    void preorder(TreeNode* root,vector <int>&vp){
+        if(root==NULL)return;
+        
+        vp.push_back(root->val);
+        preorder(root->left,vp);
+        preorder(root->right,vp);
     }
 };
