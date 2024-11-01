@@ -13,3 +13,7 @@ int main(){
     for(int i=0;i < 3;i++ )sum(arr);
     cout << arr[0] << "    " << ans;
 }
+
+
+
+
