@@ -57,13 +57,57 @@ void init_code()
 int main()
 {
    init_code();
-   int n;
-   cin >>n;
-
-
-   for(int i = 0; i<n; i++){
-     cout << i << " ";
-   }
-
+    
+    int t;
+    cin >> t;
+    while(t--){
+      int n;
+      cin >> n;
+      int A[n];
+      
+      for(int i = 0;i < n; i++){
+       cin >>A[i];   
+      }
+      
+      int l = 0;
+      int r = 0;
+      float avg = 0.0;
+      int sum = 0;
+      int flag = 0;
+      
+      while(r < n){
+          sum = 0;
+          for(int j = r; j >= l;j--){
+           sum += A[r];
+           avg = (float)sum/(float)(r-l+1);
+          
+           for(int i = 0;i < j;i++){
+               if(A[i] == avg){
+                      flag = 1;
+                       break;
+               }
+           }
+           for(int i = r + 1;i < n;i++){
+               if(A[i] == avg){
+                   flag = 1;
+                      break;
+                  }
+           }
+          }
+          
+          if(flag == 1){
+              break;
+          }
+          r++;
+      }
+      if(flag == 1){
+             cout << r - l + 1 << "\n";
+             for(int i = l;i <= r;i++ ){
+                 cout << A[i] <<" ";
+             }
+      }
+      else cout << "-1";
+     cout << endl; 
+    }
    return 0;
 }  
