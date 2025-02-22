@@ -54,60 +54,123 @@ void init_code()
 #endif
 }
 
-int main()
-{
-   init_code();
+class Solution{
+
+public:
+    void solve(int *A,int * B,int n1, int n2){
+        int minInd = 0;
+        int minEle = INT_MAX;
+        
+        for(int i = 0 ;i < n2;i ++){
+         if(minEle > B[i]){
+           minEle = B[i];
+           minInd = i;
+         }
+        }
+               
+       if(n2 == 1){
+         for(int i = 0;i < n1; i++){
+          if(A[i] > B[0]) A[i] = B[0];
+          cout << A[i] <<" ";
+         }
+         cout << endl;
+         return;
+       }
+
+       rotate(B,n2,minInd);
+       
+       int flag = 0;
+
+       for(int i = 0;i < n1 - n2;i++){
+        if(A[i] > B[0]){
+            flag = 1;
+            for(int j = i;j<=n1-n2;j++){
+                A[j] = B[0];
+            }
+            for(int j = 1; j < n2;j++){
+                A[n1 - n2 + j] = B[j];
+            }
+        }
+        if(flag == 1)break;
+       }
+
+       if(flag ==  1){
+        for(int i = 0;i<n1;i++){
+            cout << A[i] << " ";
+        }
+        cout << endl;
+       }
+       else{
+        int a2[n1];
+        
+        for(int i = 0;i < n1 - n2;i++){
+           a2[i] = A[i]; 
+        }
+        
+        for(int j = 0;j < n2;j++){
+            a2[n1 - n2 + j] = B[j];
+        }
+
+        bool isAsmall = false;
+        for(int i = 0;i < n1; i++){
+            if(A[i] > a2[i]){
+                isAsmall = false;
+                break;
+            }
+            else if(A[i] < a2[i]){
+                isAsmall = true;
+                break;
+            }
+        }
+
+        if(isAsmall){
+            for(int i = 0;i < n1; i++){
+                cout << A[i] << " ";
+            }
+        }
+        else{
+            for(int i = 0;i < n1; i++){
+                cout << a2[i] << " ";
+            }
+        }
+        cout << endl;
+       }
+   }
+private:
+    void reverse(int *B, int start, int end){
+      while(start < end){
+        int temp = B[start];
+        B[start] = B[end];
+        B[end] = temp;
+        start ++;
+        end --;
+      }
+    }
+    
+    void rotate(int *B , int n2,int k){
+        k = k % n2;
+        reverse(B, 0, k - 1);
+        reverse(B, k, n2 - 1);
+        reverse(B, 0, n2 - 1);
+    }
+
+};
+
+int main(){
+    init_code();
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); 
     
     int t;
     cin >> t;
     while(t--){
-      int n;
-      cin >> n;
-      int A[n];
-      
-      for(int i = 0;i < n; i++){
-       cin >>A[i];   
-      }
-      
-      int l = 0;
-      int r = 0;
-      float avg = 0.0;
-      int sum = 0;
-      int flag = 0;
-      
-      while(r < n){
-          sum = 0;
-          for(int j = r; j >= l;j--){
-           sum += A[r];
-           avg = (float)sum/(float)(r-l+1);
-          
-           for(int i = 0;i < j;i++){
-               if(A[i] == avg){
-                      flag = 1;
-                       break;
-               }
-           }
-           for(int i = r + 1;i < n;i++){
-               if(A[i] == avg){
-                   flag = 1;
-                      break;
-                  }
-           }
-          }
-          
-          if(flag == 1){
-              break;
-          }
-          r++;
-      }
-      if(flag == 1){
-             cout << r - l + 1 << "\n";
-             for(int i = l;i <= r;i++ ){
-                 cout << A[i] <<" ";
-             }
-      }
-      else cout << "-1";
-     cout << endl; 
+        int n1,n2;
+        cin >> n1 >> n2;
+        int A[n1], B[n2];
+        for(int i = 0;i < n1;i ++)cin >> A[i];
+        for(int i = 0;i < n2;i ++)cin >> B[i];
+        Solution ans;
+        ans.solve(A,B,n1,n2);
     }
-   return 0;
+    return 0;
 }  
