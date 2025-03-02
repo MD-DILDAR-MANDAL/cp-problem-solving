@@ -54,104 +54,62 @@ void init_code()
 #endif
 }
 
-class Solution{
+class Solution {
 
 public:
-    void solve(int *A,int * B,int n1, int n2){
-        int minInd = 0;
-        int minEle = INT_MAX;
-        
-        for(int i = 0 ;i < n2;i ++){
-         if(minEle > B[i]){
-           minEle = B[i];
-           minInd = i;
-         }
-        }
-               
-       if(n2 == 1){
-         for(int i = 0;i < n1; i++){
-          if(A[i] > B[0]) A[i] = B[0];
-          cout << A[i] <<" ";
-         }
-         cout << endl;
-         return;
-       }
-
-       rotate(B,n2,minInd);
-       
-       int flag = 0;
-
-       for(int i = 0;i < n1 - n2;i++){
-        if(A[i] > B[0]){
-            flag = 1;
-            for(int j = i;j<=n1-n2;j++){
-                A[j] = B[0];
-            }
-            for(int j = 1; j < n2;j++){
-                A[n1 - n2 + j] = B[j];
-            }
-        }
-        if(flag == 1)break;
-       }
-
-       if(flag ==  1){
-        for(int i = 0;i<n1;i++){
-            cout << A[i] << " ";
-        }
-        cout << endl;
-       }
-       else{
-        int a2[n1];
-        
-        for(int i = 0;i < n1 - n2;i++){
-           a2[i] = A[i]; 
-        }
-        
-        for(int j = 0;j < n2;j++){
-            a2[n1 - n2 + j] = B[j];
-        }
-
-        bool isAsmall = false;
-        for(int i = 0;i < n1; i++){
-            if(A[i] > a2[i]){
-                isAsmall = false;
-                break;
-            }
-            else if(A[i] < a2[i]){
-                isAsmall = true;
-                break;
-            }
-        }
-
-        if(isAsmall){
-            for(int i = 0;i < n1; i++){
-                cout << A[i] << " ";
-            }
-        }
-        else{
-            for(int i = 0;i < n1; i++){
-                cout << a2[i] << " ";
-            }
-        }
-        cout << endl;
-       }
-   }
+   int solve(void){
+       int n;
+       int r;
+       int p;
+       cin >> n;
+       cin >> r;
+       cin >> p;
+       return nCrLucasModP(n, r, p);
+ }
 private:
-    void reverse(int *B, int start, int end){
-      while(start < end){
-        int temp = B[start];
-        B[start] = B[end];
-        B[end] = temp;
-        start ++;
-        end --;
-      }
+int nCrMod10(int n, int r){
+        int mod2 = nCrLucasModP(n, r, 2);
+        int mod5 = nCrLucasModP(n, r, 5);
+        for(int i = 0;i < 10;i++){
+            if(i % 2 == mod2 && i % 5 == mod5 ) return i;
+        }
+        return 0;
     }
-    
-    void rotate(int *B , int n2,int k){
-        k = k % n2;
-        reverse(B, 0, k - 1);
-        reverse(B, k, n2 - 1);
-        reverse(B, 0, n2 - 1);
+
+    int nCrLucasModP(int n, int r, int p) {
+        if (r > n)return 0;
+
+        int result = 1;
+        while (n > 0 || r > 0) {
+            int ni = n % p;
+            int ri = r % p;
+            result = 1LL * result * nCrLucasModPDP(ni, ri, p) % p;
+            n = n / p;
+            r = r / p;
+        }
+        return result;
+    }
+
+    int nCrLucasModPDP(int n, int r, int p) {
+        if (r > n)return 0;
+        if (r == 0 || r == n)return 1;
+
+        vector<int> fact(n + 1, 1);
+        for (int i = 2; i <= n; i++)
+            fact[i] = (1LL * i * fact[i - 1]) % p;
+
+        return (1LL * fact[n] * factInv(fact[r], p - 2, p) % p * factInv(fact[n - r], p - 2, p) % p) % p;
+    }
+
+    int factInv(int r, int y, int p) {
+        int res = 1;
+        while (y > 0) {
+
+            if (y % 2 != 0) res = (1LL * res * r) % p;
+            y = y / 2;
+            r = (1LL * r * r) % p;
+        }
+        return res;
     }
 
 };
@@ -163,14 +121,9 @@ int main(){
     
     int t;
     cin >> t;
+    Solution ans;
     while(t--){
-        int n1,n2;
-        cin >> n1 >> n2;
-        int A[n1], B[n2];
-        for(int i = 0;i < n1;i ++)cin >> A[i];
-        for(int i = 0;i < n2;i ++)cin >> B[i];
-        Solution ans;
-        ans.solve(A,B,n1,n2);
+        cout << ans.solve() << endl;
     }
     return 0;
 }  
