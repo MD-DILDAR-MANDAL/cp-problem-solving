@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
-
 using namespace std;
-
 #define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 #define MOD 1000000007
 #define MOD1 998244353
@@ -47,69 +45,34 @@ template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
-void init_code()
-{
+void init_code(){
 #ifndef ONLINE_JUDGE
    freopen("error.txt", "w", stderr);
 #endif
 }
 
 class Solution {
-
 public:
-   int solve(void){
-       int n;
-       int r;
-       int p;
-       cin >> n;
-       cin >> r;
-       cin >> p;
-       return nCrLucasModP(n, r, p);
- }
-private:
-int nCrMod10(int n, int r){
-        int mod2 = nCrLucasModP(n, r, 2);
-        int mod5 = nCrLucasModP(n, r, 5);
-        for(int i = 0;i < 10;i++){
-            if(i % 2 == mod2 && i % 5 == mod5 ) return i;
-        }
-        return 0;
+    int rangeSum(int i, int j){
+        int sum = ( j * (j + 1) - i * (i - 1) )/2;
+        return sum;
     }
 
-    int nCrLucasModP(int n, int r, int p) {
-        if (r > n)return 0;
+    void solve(){
+        string str;
+        getline(cin, str);
+        stringstream ss(str);
+        int i, j;
 
-        int result = 1;
-        while (n > 0 || r > 0) {
-            int ni = n % p;
-            int ri = r % p;
-            result = 1LL * result * nCrLucasModPDP(ni, ri, p) % p;
-            n = n / p;
-            r = r / p;
+        if(!(ss >> i) || !(ss >> j)){
+            cout << "invalid input give both the values" << endl;
+            return;
         }
-        return result;
-    }
-
-    int nCrLucasModPDP(int n, int r, int p) {
-        if (r > n)return 0;
-        if (r == 0 || r == n)return 1;
-
-        vector<int> fact(n + 1, 1);
-        for (int i = 2; i <= n; i++)
-            fact[i] = (1LL * i * fact[i - 1]) % p;
-
-        return (1LL * fact[n] * factInv(fact[r], p - 2, p) % p * factInv(fact[n - r], p - 2, p) % p) % p;
-    }
-
-    int factInv(int r, int y, int p) {
-        int res = 1;
-        while (y > 0) {
-
-            if (y % 2 != 0) res = (1LL * res * r) % p;
-            y = y / 2;
-            r = (1LL * r * r) % p;
+        if(i < 0 || j >9999){
+            cout << "invalid input range" <<endl;
+            return;
         }
-        return res;
+        cout << rangeSum(i,j) << endl;
     }
 
 };
@@ -117,13 +80,15 @@ int nCrMod10(int n, int r){
 int main(){
     init_code();
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); 
-    
+    cin.tie(NULL);
+    int x = 10/0;
+    cout << x << endl; 
     int t;
     cin >> t;
-    Solution ans;
+    cin.ignore();
     while(t--){
-        cout << ans.solve() << endl;
+        Solution ans;
+        ans.solve();
     }
     return 0;
-}  
+}
