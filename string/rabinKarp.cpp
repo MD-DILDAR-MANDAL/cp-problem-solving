@@ -23,15 +23,14 @@ bool checkPattern(string &str, string &pattern, int start, int end){
 	return true;
 }
 
-int main(){
-	string str = "birthboy";
-	string pattern = "birth";
+int searchPattern(string str, string pattern){
 	int strLen = str.length();
 	int patternLen = pattern.length();
 	int patternHash = hashCalculate(pattern, 0, patternLen - 1);
 	int ans = -1;
 	int t = 0;
 	int highOrder = 1;
+
 	for(int i = 0; i < patternLen - 1;i++){
 		highOrder = (highOrder*BASE) % PRIME;
 	}
@@ -41,17 +40,24 @@ int main(){
 			t = hashCalculate(str, 0, patternLen - 1);
 		}
 		else{
-			t = ( (t - (int(str[i - 1]) * highOrder ) % PRIME) * BASE + int(str[i + patternLen - 1]) ) % PRIME; 
+			t = ( (t - (int(str[i - 1]) * highOrder ) % PRIME) 
+				* BASE + int(str[i + patternLen - 1]) ) % PRIME; 
 			if(t < 0){
 				t += PRIME;
 			}
 		}
 
-		if(t == patternHash && checkPattern(str, pattern, i, i + patternLen - 1)){
-			ans = i + 1;
-			break;
+		if(t == patternHash 
+			&& checkPattern(str, pattern, i, i + patternLen - 1)){
+			return (i + 1);
 		}
 	}
-	cout << ans <<endl;
+	return -1;
+}
+
+int main(){
+	string str = "hibirthboy";
+	string pattern = "birth";
+	cout << searchPattern(str, pattern) << endl; 
 	return 0;
 }
