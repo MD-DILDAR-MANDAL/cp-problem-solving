@@ -1,3 +1,4 @@
+
 class Solution {
   public:
     // Function to return the adjacency list for each vertex.
